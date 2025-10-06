@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/fragment_rounded_background"> <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="¡Bienvenido al Rincón del Atleta!"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:textColor="#333333"
+    android:gravity="center"
+    android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explora las leyendas de tus deportes favoritos. Selecciona un deporte para hacer un zoom hacia los atletas más icónicos. Luego, toca a un atleta para descubrir su momento de gloria."
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btn_close_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡A EXPLORAR!"
+        android:layout_gravity="end"
+        android:backgroundTint="#00BFA5"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.App.Light" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/light_primary</item>
+        <item name="colorPrimaryVariant">@color/light_primary_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSurface">@color/light_card_background</item>
+        <item name="android:colorBackground">@color/light_background</item>
+        <item name="android:textColorPrimary">@color/light_text</item>
+
+        <item name="android:statusBarColor">@color/light_primary_variant</item>
+    </style>
+
+    <style name="Theme.App.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorPrimaryVariant">@color/dark_primary_variant</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <item name="colorSurface">@color/dark_card_background</item>
+        <item name="android:colorBackground">@color/dark_background</item>
+        <item name="android:textColorPrimary">@color/dark_text</item>
+
+        <item name="android:statusBarColor">@color/dark_primary</item>
+    </style>
+
+    <style name="AppTheme.Dialog_Slide" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="Theme.Tarea2_Activities" parent="Theme.App.Light" />
+</resources>

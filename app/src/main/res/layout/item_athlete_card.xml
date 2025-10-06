@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#222222">
+
+        <ImageView
+            android:id="@+id/img_athlete"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_placeholder"
+            android:contentDescription="Foto del Atleta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:transitionName="athlete_image_transition" /> <TextView
+        android:id="@+id/tv_athlete_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Atleta"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        app:layout_constraintStart_toEndOf="@id/img_athlete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_athlete_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="La Leyenda"
+            android:textColor="#CCCCCC"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            app:layout_constraintStart_toEndOf="@id/img_athlete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_athlete_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
